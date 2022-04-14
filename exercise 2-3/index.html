@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 2-3</title>
+    <script>
+        // var t
+        // var a = prompt("Please Enter the amount:")
+        
+        
+        // function cal(){
+        //     if(a>3500){
+        //     a = (3500/100 ) * 10;
+        //     alert("Your total amount is to pay:"+a)
+        // }
+        // else if(a>2500){
+        //     a = (2500/100) * 10
+            
+        //     alert("Your total amount is to pay:"+ a)
+        // }
+        // else{
+         
+        //     alert("Your total amount is to pay:"+ a)
+        //    }
+        // }   
+//         function calculation(){
+//         var ba=Number(prompt('Enter the bill Amount'))
+//   var dp
+//   if(ba>3500){
+//       dp=10
+//   }else if(ba>2500){
+//       dp=5
+//   }else{
+//       dp=0
+//   }
+//   var totalam=ba- ((ba) * (dp/100))
+    
+//     alert(" your total amount is"+ totalam)
+//     }
+       function on(){
+           document.getElementById('bulbimg').src = 'https://www.w3schools.com/js/pic_bulbon.gif'
+       }
+       function off(){
+        document.getElementById('bulbimg').src="https://www.w3schools.com/js/pic_bulboff.gif" 
+       }
+       let status = true
+       function turnoffon(){
+        if(status){
+            document.getElementById('bulbimg-2').src="https://www.w3schools.com/js/pic_bulboff.gif" 
+             status = false
+        }
+        else{
+            document.getElementById('bulbimg-2').src = 'https://www.w3schools.com/js/pic_bulbon.gif'
+            status = true
+        }
+       }
+       
+    </script>
+</head>
+<body>
+    <!-- <button onclick = "cal()">Display Amount</button> -->
+    <!-- <button onclick="calculation()">calculate total bill amount</button> -->
+    
+    <div>
+          <img src="https://www.w3schools.com/js/pic_bulboff.gif"  id="bulbimg">
+          <br>
+          <button onClick="on()">On</button>
+          <button onClick="off()">Off</button>
+          <br>
+        </div>
+        <div>
+          <img src="https://www.w3schools.com/js/pic_bulboff.gif"  id="bulbimg-2">
+          <br>
+          <button onClick="turnoffon()">TurnOn/TurnOff</button>
+        </div>
+</body>
+</html>

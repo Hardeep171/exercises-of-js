@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let count = 0
+        let x = 0
+        let z = "j+h+c+b"
+        for(let i=0;i<z.length;i++){
+            if(z[i] == '+'){
+                x = i
+                count++
+            }
+            
+            if(count == 2)
+            break
+
+        }
+        console.log("Index of 2nd plus = " + x)
+    </script>
+</body>
+</html>
