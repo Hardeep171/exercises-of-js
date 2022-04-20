@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index2.css">
+</head>
+
+<body>
+    
+    <div class="bank-balance-display">
+        <div class="heading">
+            Bank Intrest Calculator
+        </div>
+        <table>
+            <tr>
+                <th>Account Holder Name</th>
+                <th>Current Account Balance</th>
+                <th>Balance After Intrest</th>
+            </tr>
+            <tr>
+                <td>Aditya</td>
+                <td><input type="number" min="0"id="bank-balance-1"></td>
+                <td id="bank-balance-11" class="cls"></td>
+            </tr>
+            <tr>
+                <td>Anita</td>
+                <td><input type="number" min="0" id="bank-balance-2"></td>
+                <td id="bank-balance-22" class="cls"></td>
+            </tr>
+            <tr>
+                <td>Anupam</td>
+                <td><input type="number" min="0"id="bank-balance-3"></td>
+                <td id="bank-balance-33" class="cls"></td>
+            </tr>
+        </table>
+        <button onclick="calculate()" class="btn">Calculate Intrest For All Account Holders</button>
+        <script src="index2.js" ></script>
+    </div>
+    
+        
+    
+</body>
+
+</html>
