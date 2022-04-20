@@ -11,9 +11,9 @@ function calculate() {
    let a = [bb1.value,bb2.value,bb3.value]
    console.log(a)
    calculateIntrest(a)
-   data1.innerText = a[0]
-   data2.innerText = a[1]
-   data3.innerText = a[2]
+   data1.value = a[0]
+   data2.value = a[1]
+   data3.value = a[2]
    var one = document.getElementsByClassName('cls')
    one.classList.add('cls1')
    console.log(a)
